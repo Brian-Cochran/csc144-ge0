@@ -2,7 +2,7 @@
 package searchandsort;
 
 import java.util.ArrayList;
-import java.util.Collections;
+//import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -100,9 +100,17 @@ public class SearchAndSort {
     // TO-DO: Define a method that sorts a list
     // of integers using the insertion sort algorithm.
     public static List<Integer> insertionSort(List<Integer> values) {
-        
-        return null;
-    }
+        for (int i = 1; i < values.size(); i++) { 
+            int key = values.get(i); 
+            int j = i - 1;
+            while (j >= 0 && values.get(j) > key) {
+                values.set(j + 1, values.get(j));
+                j = j - 1;
+            } // while
+            values.set(j + 1, key);
+        }
+        return values;
+    } // insertionSort
     
     // TO-DO: Define a method that sorts a list
     // of integers using the merge sort algorithm.
@@ -118,9 +126,11 @@ public class SearchAndSort {
         //Collections.sort(data);
         printList(data);
         
-        System.out.println("index = " + sequentialSearch(data, 39));
-        System.out.println("index = " + binarySearch(data, 50));
-        System.out.println("sorted list: " + selectionSort(data));
+        //System.out.println("index = " + sequentialSearch(data, 39));
+        //System.out.println("index = " + binarySearch(data, 50));
+        //System.out.println("sorted list: " + selectionSort(data));
+        //System.out.println("sorted list: " + insertionSort(data));
+        
     } // main
         
 } // SearchAndSort
