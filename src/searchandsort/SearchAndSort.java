@@ -39,8 +39,7 @@ import java.util.Scanner;
  * extra keystrokes necessary to include semi-colons and curly brackets made it 
  * easier to see where my formatting was incorrect and allowed me to quickly fix 
  * minor issues. Some more information about the differences between Java and 
- * Python can be found <a href="https://medium.com/@trungluongquang/why-use-java
- * -that-even-requires-more-lines-of-code-than-python-7805703e4763>here.</a>
+ * Python can be found <a href="https://medium.com/@trungluongquang/why-use-java-that-even-requires-more-lines-of-code-than-python-7805703e4763">here.</a>
  * <p>
  * Through this project as well as learning how to use Java, the most important 
  * thing I learned was how to use recursion. My programming background has mostly 
@@ -66,7 +65,7 @@ public class SearchAndSort {
      * Creates a list of random integers.
      * <p>
      * This method creates a list of random integers with a length based on the 
-     * parameter size.
+     * parameter size. this is used to test the search and sort methods.
      * 
      * @param size size of the list of integers to be created
      * @return list of integers.
@@ -87,7 +86,8 @@ public class SearchAndSort {
      * This method prints a list of integers in one of two ways. If the length 
      * of the list is larger than or equal to the constant SIZE_THRESHOLD, the 
      * list is printed with one element per line. If the list is less than the 
-     * constant SIZE_THRESHOLD, the list is printed on one line.
+     * constant SIZE_THRESHOLD, the list is printed on one line. This is used to 
+     * test the search and sort methods.
      * 
      * @param values list of integers to be printed
      */
@@ -232,7 +232,7 @@ public class SearchAndSort {
      * <p>
      * This method first compares the two lists and orders the elements. Then it 
      * adds any extra elements from either list to the end of the merged list to 
-     * be returned.
+     * be returned. This is used in the mergeSort method.
      * 
      * @param left first list of integers to be merged
      * @param right second list of integers to be merged
