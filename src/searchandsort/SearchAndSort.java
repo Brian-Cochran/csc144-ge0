@@ -13,6 +13,45 @@ import java.util.Scanner;
  * Within this class are methods for sequential search, binary search, 
  * selection sort, insertion sort, and merge sort. There are also methods to 
  * create a list of integers and print a list of integers.
+ * <p>
+ * <b> What I learned </b><br>
+ * I went into this assignment with a beginner's understanding of the Python 
+ * programming language. Through completing this assignment, I learned a lot 
+ * about the differences between Java and Python, which I will highlight below.
+ * <p>
+ * The first difference I noticed between Java and Python was the fact that unlike 
+ * Python, Java is statically typed. In Python, when a variable is created, 
+ * there is no need to specify the data type that variable is storing. However, 
+ * in Java, data types must be specified before an assignment. In much the same 
+ * way, the need to specify a return type of a method in Java threw me off at 
+ * first. A Python function doesn't require a return type to be specified. In a
+ * Java method, though, even if nothing is returned in a method you still need 
+ * to specify that nothing is returned by writing "void" before the method. 
+ * There are many other little things I noticed that made Java hard to get used 
+ * to such as the need for semicolons after each line of code and curly braces 
+ * used in statements such as if and while.
+ * <p>
+ * At first, I saw all these differences as weaknesses on Java's part. I did a 
+ * little research, though, and found that some of these weaknesses turned out to 
+ * be advantages. By being statically typed, Java provides type safety that 
+ * catches errors at compile time, rather than at runtime like Python does. 
+ * This makes debugging easier in a Java program than a Python program. The 
+ * extra keystrokes necessary to include semi-colons and curly brackets made it 
+ * easier to see where my formatting was incorrect and allowed me to quickly fix 
+ * minor issues. Some more information about the differences between Java and 
+ * Python can be found <a href="https://medium.com/@trungluongquang/why-use-java-that-even-requires-more-lines-of-code-than-python-7805703e4763>here.</a>
+ * <p>
+ * Through this project as well as learning how to use Java, the most important 
+ * thing I learned was how to use recursion. My programming background has mostly 
+ * involved iterative functions. In my first attempt to create a merge sort 
+ * algorithm I used a single iterative method. This created an extremely long
+ * method and I could not understand how to divide a list and merge it in the 
+ * same method. Eventually, I sought out help on the problem and found a 
+ * recursive method for merge sort online. This method used a simple 
+ * array instead of creating a list of integers, but it got me on the right 
+ * track to solving the problem. By creating two methods and calling the merge 
+ * sort method within the merge sort method I was able to shorten my 
+ * code and get a better understanding of how recursion operates.
  * 
  * @author Brian Cochran
  * @version 3/29/2020
@@ -240,8 +279,10 @@ public class SearchAndSort {
         int mid = values.size() / 2;
         List<Integer> left = values.subList(0, mid);
         List<Integer> right = values.subList(mid, values.size());
+        
         left = mergeSort(left);
         right = mergeSort(right);
+        
         return merge(left, right);
     } // mergeSort
     
