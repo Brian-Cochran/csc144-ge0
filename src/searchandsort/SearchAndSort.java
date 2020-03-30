@@ -39,7 +39,8 @@ import java.util.Scanner;
  * extra keystrokes necessary to include semi-colons and curly brackets made it 
  * easier to see where my formatting was incorrect and allowed me to quickly fix 
  * minor issues. Some more information about the differences between Java and 
- * Python can be found <a href="https://medium.com/@trungluongquang/why-use-java-that-even-requires-more-lines-of-code-than-python-7805703e4763>here.</a>
+ * Python can be found <a href="https://medium.com/@trungluongquang/why-use-java
+ * -that-even-requires-more-lines-of-code-than-python-7805703e4763>here.</a>
  * <p>
  * Through this project as well as learning how to use Java, the most important 
  * thing I learned was how to use recursion. My programming background has mostly 
