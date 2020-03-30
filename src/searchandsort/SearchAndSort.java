@@ -1,3 +1,4 @@
+
 package searchandsort;
 
 import java.util.ArrayList;
@@ -50,8 +51,8 @@ import java.util.Scanner;
  * recursive method for merge sort online. This method used a simple 
  * array instead of creating a list of integers, but it got me on the right 
  * track to solving the problem. By creating two methods and calling the merge 
- * sort method within the merge sort method I was able to shorten my 
- * code and get a better understanding of how recursion operates.
+ * sort method within itself, I was able to shorten my code and get a better 
+ * understanding of how recursion works.
  * 
  * @author Brian Cochran
  * @version 3/29/2020
